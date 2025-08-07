@@ -1,41 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vishnupriya | Software Engineer</title>
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vishnupriya | Portfolio</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <header>
-    <h1>Vishnupriya</h1>
-    <p>Software Engineer | Full Stack Developer</p>
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span>Vishnupriya</span></h1>
+      <p>Software Engineer | Full Stack Developer | Test Automation Specialist</p>
+      <a href="#projects" class="btn">See My Work</a>
+    </div>
   </header>
 
-  <section id="about">
+  <section class="about" id="about">
     <h2>About Me</h2>
-    <p>I am a passionate developer with experience in PHP, Laravel, Java, Selenium, and web testing. I love building responsive websites and solving complex backend problems.</p>
+    <div class="about-content">
+      <img src="images/profile.jpg" alt="Profile" />
+      <p>I’m a versatile developer skilled in PHP, Laravel, Java, Selenium, and frontend tools. I build scalable websites and automate testing. Passionate about learning and delivering impact through code.</p>
+    </div>
   </section>
 
-  <section id="projects">
+  <section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <div class="skill-bars">
+      <div><span>HTML/CSS</span><div class="bar html"></div></div>
+      <div><span>JavaScript</span><div class="bar js"></div></div>
+      <div><span>PHP & Laravel</span><div class="bar php"></div></div>
+      <div><span>Java + Selenium</span><div class="bar java"></div></div>
+      <div><span>Manual & API Testing</span><div class="bar test"></div></div>
+    </div>
+  </section>
+
+  <section class="projects" id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li><strong>DVA Claims Website</strong> – A medical services website using WordPress and PHP.</li>
-      <li><strong>Rental Booking System</strong> – Built with CodeIgniter, supports dynamic slot checking and booking.</li>
-      <li><strong>Portfolio Website</strong> – This very site you're viewing now!</li>
-    </ul>
+    <div class="project-grid">
+      <div class="project-card">
+        <h3>DVA Claims Website</h3>
+        <p>Medical site built with WordPress, PHP & SEO focus.</p>
+      </div>
+      <div class="project-card">
+        <h3>Rental Booking System</h3>
+        <p>Dynamic slot checking & booking using CodeIgniter.</p>
+      </div>
+      <div class="project-card">
+        <h3>Automation Suite</h3>
+        <p>Tested web flows using Java, Selenium, and TestNG.</p>
+      </div>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: vishnupriya@example.com</p>
-    <p>LinkedIn: <a href="https://www.linkedin.com/in/your-profile" target="_blank">View Profile</a></p>
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p><i class="fas fa-envelope"></i> vishnupriya@example.com</p>
+    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></p>
+    <p><i class="fas fa-download"></i> <a href="resume.pdf" target="_blank">Download Resume</a></p>
   </section>
 
   <footer>
-    <p>&copy; 2025 Vishnupriya. All rights reserved.</p>
+    <p>&copy; 2025 Vishnupriya. Built with ❤️</p>
   </footer>
 
 </body>
