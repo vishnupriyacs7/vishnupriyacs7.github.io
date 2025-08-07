@@ -7,22 +7,28 @@
   <link rel="stylesheet" href="css/style.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
 </head>
 <body>
 
   <header class="hero">
-    <div class="hero-content">
-      <h1>Hi, I'm <span>Vishnupriya</span></h1>
-      <p>Software Engineer | Full Stack Developer | Test Automation Specialist</p>
-      <a href="#projects" class="btn">See My Work</a>
-    </div>
-  </header>
+  <div class="theme-toggle">
+    <button onclick="toggleTheme()">🌙</button>
+  </div>
+  <div class="hero-content">
+    <h1>Hi, I'm <span>Vishnupriya</span></h1>
+    <p><span id="typed"></span></p>
+    <a href="#projects" class="btn">See My Work</a>
+  </div>
+</header>
+
 
   <section class="about" id="about">
     <h2>About Me</h2>
     <div class="about-content">
       <img src="images/profile.jpg" alt="Profile" />
-      <p>I’m a versatile developer skilled in PHP, Laravel, Java, Selenium, and frontend tools. I build scalable websites and automate testing. Passionate about learning and delivering impact through code.</p>
+      <p>I'm a versatile developer skilled in PHP, Laravel, Java, Selenium, and frontend tools. I build scalable websites and automate testing. Passionate about learning and delivering impact through code.</p>
     </div>
   </section>
 
@@ -65,6 +71,23 @@
   <footer>
     <p>&copy; 2025 Vishnupriya. Built with ❤️</p>
   </footer>
+  <script>
+  var typed = new Typed("#typed", {
+    strings: [
+      "Software Engineer",
+      "Full Stack Developer",
+      "Test Automation Specialist",
+      "PHP & Laravel Expert"
+    ],
+    typeSpeed: 50,
+    backSpeed: 25,
+    loop: true
+  });
+
+  function toggleTheme() {
+    document.body.classList.toggle("dark-mode");
+  }
+</script>
 
 </body>
 </html>

@@ -99,3 +99,35 @@ a {
   color: #4a90e2;
   text-decoration: none;
 }
+/* Dark Mode */
+body.dark-mode {
+  background: #121212;
+  color: #eee;
+}
+
+body.dark-mode .hero {
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+}
+
+body.dark-mode .btn {
+  background: #333;
+  color: #fff;
+}
+
+body.dark-mode .project-card {
+  background: #1e1e1e;
+  color: #fff;
+}
+
+.theme-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+.theme-toggle button {
+  padding: 8px 12px;
+  background: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
