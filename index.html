@@ -79,11 +79,21 @@
 
 
   <section class="contact" id="contact">
-    <h2>Contact Me</h2>
-    <p><i class="fas fa-envelope"></i> vishnupriya@example.com</p>
-    <p><i class="fab fa-linkedin"></i> <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn Profile</a></p>
-    <p><i class="fas fa-download"></i> <a href="resume.pdf" target="_blank">Download Resume</a></p>
-  </section>
+  <h2>Contact Me</h2>
+  <form action="https://formsubmit.co/vishnupriyacs7@gmail.com" method="POST" class="contact-form">
+    
+    <!-- FormSubmit settings -->
+    <input type="hidden" name="_captcha" value="false">
+    <input type="hidden" name="_template" value="table">
+    <input type="hidden" name="_next" value="https://vishnupriyacs7.github.io/thankyou.html">
+
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+    <button type="submit" class="btn">Send Message</button>
+  </form>
+</section>
+
 
   <footer>
     <p>&copy; 2025 Vishnupriya. Built with ❤️</p>
